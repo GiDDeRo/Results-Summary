@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: hsla(221, 100%, 96%, .1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    display: flex;
+    width: 520px;
+    height: 23rem;
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+    font-family:"Hanken Grotesk", 'Segoe UI', Roboto,'Open Sans', sans-serif;
+    box-shadow: 10px 15px 30px hsla(241, 100%, 89%, .65);
+    overflow: hidden;
+    margin: 0px 20px;
+}
+main div {
+    height: 100%;
+    width: 50%;
+}
+.container-1 {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(234, 85%, 45%));
+    border-radius: 20px;
+    display: grid;
+    justify-items: center;
+    align-content: space-between;
+    padding: 30px;
+}
+.container-1 p {
+    color: hsl(241, 100%, 89%);
+}
+#rate {
+    font-size: 50px; 
+    font-weight: 700; 
+    color: white;
+}
+#total {
+    font-size: 12px;
+}
+#circle {
+    border-radius: 50%; 
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0)); 
+    width: max-content; 
+    padding: 25px 40px;
+}
+#great {
+    color: white; 
+    font-weight: 600; 
+    font-size: 23px;
+}
+#text {
+    font-size: 13px; 
+    /* position: relative; 
+    bottom: 10px; */
+}
+.container-2 {
+    padding: 25px;
+}
+.options {
+    width: 100%;
+    padding: 0px;
+    height: max-content;
+    margin: 20px 0px;
+}
+.option {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    margin: 6px 0px;
+    width: 100%;
+    border-radius: 8px;
+}
+.option p {
+    font-size: 13px;
+    font-weight: 600;
+}
+/* .option {
+    position: relative;
+}
+.option:before, .option:after, .option>:first-child:before, .option>:first-child:after {
+    content: '';
+    position:absolute; 
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-width: 0px;
+    border-style: solid;
+}
+.option:before {
+    top:0px;
+    left: 0px;
+    width: calc(100% - 95%);
+    height: calc(100% - 70%);
+    border-width: 2px 0 0 2px;
+    border-radius: 8px 0 0 0px; 
+}
+.option:after {
+    top: 0px;
+    right: 0px;
+    width: calc(100% - 90%);
+    border-width: 2px 2px 2px;
+    border-radius: 0px 8px 0px 0px;
+} */
+.sub-option {
+    display: inline-flex;
+    align-items: center;
+}
+.sub-option p {
+    margin-left: 10px;
+}
+#a {
+    background-color: hsla(0, 100%, 67%, .08);
+}
+#a:before, #a:after, #a>:first-child:before, #a>:first-child:after{
+    border-color:hsl(0, 100%, 67%);
+}
+#b {
+    background-color: hsla(39, 100%, 56%, .08);
+}
+#b:before, #b:after, #b>:first-child:before, #b>:first-child:after {
+    border-color: hsl(39, 100%, 56%);
+}
+#c {
+    background-color: hsla(166, 100%, 37%, .08);
+}
+#c:before, #c:after, #c>:first-child:before, #c>:first-child:after {
+    border-color: hsl(166, 100%, 37%);
+}
+#d {
+    background-color: hsla(234, 85%, 45%, .08);
+}
+#d:before, #d:after, #d>:first-child:before, #d>:first-child:after {
+    border-color: hsl(234, 85%, 45%);
+}
+.rate {
+    color: hsla(224, 30%, 27%, .7);
+}
+.rate span {
+    color: black;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(224, 30%, 27%);
+}
+button:hover {
+    cursor: pointer;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(234, 85%, 45%));
+}
+button p {
+    color: white;
+    font-family: "Hanken Grotesk";
+}
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+@media (max-width:460px) {
+    body {
+        height: 100%;
+        display: block;
+    }
+    main {
+        display: block;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0px;
+        font-size: 15px;
+    }
+    main div {
+        width: 100%;
+    }
+    .container-1 {
+        height: 17rem;
+        padding: 1.2rem 40px;
+        border-radius: 0px 0px 30px 30px;
+    }
+    #rate {
+        font-size: 45px;
+    }
+    #total{
+        font-size: 15px;
+    }
+    #circle {
+        padding: 15px 33px;
+    }
+    #great {
+        font-size: 20px;
+    }
+    #text {
+        font-size: 13px;
+    }
+    .container-2 {
+        margin-top: 10px;
+        padding: 20px 20px 0px 20px;
+    }
+    .container-2 div {
+        margin-top: 10px;
+    }
+    .option {
+        margin: 10px 0px;
+        padding: 10px 12px;
+    }
+    button {
+        margin-top: 15px;
+    }
+    footer {
+        position:relative;
+        margin-top: 20px;
+    }
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
